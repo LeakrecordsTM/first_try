@@ -2,52 +2,146 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Meine erste Website</title>
+  <title>Leon Pundt – Webdesign für kleine Unternehmen</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Willkommen auf meiner ersten Website 🎉</h1>
+    <div class="logo">Leon Pundt</div>
     <nav>
+      <a href="#hero">Start</a>
       <a href="#about">Über mich</a>
-      <a href="#projects">Projekte</a>
-      <a href="#contact">Kontakt</a>
+      <a href="#services">Leistungen</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#impressum">Impressum</a>
     </nav>
   </header>
 
   <main>
+    <!-- HERO / STARTBEREICH -->
     <section id="hero">
-      <h2>Hallo, ich bin [Dein Name]</h2>
-      <p>Das ist meine allererste selbst programmierte Website.</p>
-      <button id="cta-button">Sag Hallo in der Konsole</button>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hero-badge">Websites für kleine Unternehmen</p>
+          <h1>Moderne, klare Websites, die Kund:innen verstehen.</h1>
+          <p class="hero-subtext">
+            Ich erstelle schlanke und übersichtliche Websites für kleine Unternehmen,
+            Selbstständige und lokale Betriebe – von der ersten Idee bis zur fertigen Seite.
+          </p>
+          <a class="btn-primary" href="#kontakt">Kostenlos anfragen</a>
+          <a class="btn-ghost" href="#services">Zu den Leistungen</a>
+        </div>
+        <div class="hero-side">
+          <div class="profilkarte">
+            <!-- Später ersetzen wir den Platzhalter durch ein echtes Foto -->
+            <div class="profilfoto-platzhalter">LP</div>
+            <h2>Leon Pundt</h2>
+            <p>Webdesign · Frontend · GitHub Pages</p>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- ÜBER MICH + WERDEGANG -->
     <section id="about">
-      <h2>Über mich</h2>
-      <p>
-        Hier kannst du etwas über dich schreiben – wer du bist, was du machst,
-        warum du mit Programmierung/Websites anfängst usw.
-      </p>
+      <h2 class="section-title">Über mich</h2>
+      <div class="zweispaltig">
+        <div>
+          <p>
+            Hallo, ich bin Leon Pundt. Ich helfe kleinen Unternehmen dabei,
+            einen professionellen und modernen Online-Auftritt zu bekommen – ohne
+            komplizierte Technik und teure Agenturverträge.
+          </p>
+          <p>
+            Mein Fokus liegt auf klaren, übersichtlichen Seiten, die auf dem Smartphone
+            genauso gut funktionieren wie auf dem Laptop.
+          </p>
+        </div>
+        <div>
+          <h3>Mein Werdegang</h3>
+          <ul class="werdegang-liste">
+            <li><strong>2024 – heute</strong>: Webdesign für kleine Unternehmen in Münster</li>
+            <li><strong>vorher</strong>: Erste eigene Projekte & Einstieg in Programmierung</li>
+            <li><strong>Zukunft</strong>: Ausbau meines Angebots für lokale Betriebe</li>
+          </ul>
+          <p class="werdegang-hinweis">
+            ➜ Diese Stationen kannst du später mit genauen Daten und Details ergänzen.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Projekte</h2>
-      <ul>
-        <li>Projekt 1 – kommt bald 😄</li>
-        <li>Projekt 2 – kommt auch bald</li>
-      </ul>
+    <!-- LEISTUNGEN -->
+    <section id="services">
+      <h2 class="section-title">Leistungen</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Onepager</h3>
+          <p>Eine übersichtliche Ein-Seiten-Website mit allen wichtigen Infos zu deinem Unternehmen.</p>
+          <ul>
+            <li>Startseite mit deinen Inhalten</li>
+            <li>Kontaktbereich mit Formular</li>
+            <li>Impressum & Datenschutzhinweis (Texte vom Kunden)</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Mehrseitige Website</h3>
+          <p>Für Betriebe, die mehr erzählen wollen: z.B. Leistungen, Team, Referenzen.</p>
+          <ul>
+            <li>Strukturkonzept & Navigation</li>
+            <li>Mehrere Unterseiten</li>
+            <li>Responsive Design (auch fürs Smartphone)</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <h3>Technische Umsetzung</h3>
+          <p>Ich kümmere mich um die Umsetzung und stelle die Seite online.</p>
+          <ul>
+            <li>Umsetzung mit HTML, CSS & JavaScript</li>
+            <li>Hosting-Einrichtung (z.B. GitHub Pages/Hosting-Anbieter)</li>
+            <li>Kurze Einweisung zur Nutzung</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Kontakt</h2>
-      <p>Du kannst mich erreichen unter: <a href="mailto:deinname@example.com">deinname@example.com</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="year"></span> Dein Name. Alle Rechte vorbehalten.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <!-- KONTAKT -->
+    <section id="kontakt">
+      <h2 class="section-title">Kontakt</h2>
+      <div class="kontakt-grid">
+        <div>
+          <p>
+            Interesse an einer Website oder Fragen zu meiner Arbeit?
+            Schreib mir einfach eine Nachricht über das Formular
+            oder direkt per E-Mail.
+          </p>
+          <p>
+            <strong>E-Mail:</strong>
+            <a href="mailto:leonpundt499@gmail.com">leonpundt499@gmail.com</a>
+          </p>
+          <p>
+            <strong>Standort:</strong><br>
+            Moltkestraße 32<br>
+            48151 Münster
+          </p>
+        </div>
+        <div>
+          <!-- Einfaches Kontaktformular, das eine E-Mail öffnet -->
+          <form action="mailto:leonpundt499@gmail.com" method="post" enctype="text/plain">
+            <label>
+              Dein Name*
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              Deine E-Mail*
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Betreff
+              <input type="text" name="betreff">
+            </label>
+            <label>
+              Deine Nachricht*
+              <textarea name="nachricht" rows="5" required></textarea>
+            </label>
+            <p class="form
